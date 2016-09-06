@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+<!-- GIT TEST  -->
 <div id="primary_blog" class="container page-content blog-content">
 	<div class="row" role="main">
 		<div id="content" class="col-sm-8 col-md-9">
