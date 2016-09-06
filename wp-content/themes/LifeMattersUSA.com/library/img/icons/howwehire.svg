@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px"
+	 height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+<g id="BG" display="none">
+	<g id="how_we_hire" display="inline">
+		<rect width="100" height="100"/>
+		<g>
+			<path fill="#00FA5C" d="M71,28v43H28V28H71 M72,27H27v45h45V27L72,27z"/>
+		</g>
+	</g>
+</g>
+<g id="Symbols">
+	<g id="how_we_hire_1_">
+		<path fill="#FFFFFF" d="M65,17h-3H43c-10.833,0-23,14-23,14v41h1h4h37h3h2V17H65z M25,69V31.488l13.834,0.013
+			C36.501,21.001,43,20,43,20h19v49H25z"/>
+		<g>
+			<path fill="#FFFFFF" d="M44,25v14h0.319c0.333-1.587,2.204-2.898,4.744-3.421c-0.798-0.688-1.313-1.693-1.313-2.829
+				c0-2.071,1.679-3.75,3.75-3.75s3.75,1.679,3.75,3.75c0,1.136-0.516,2.142-1.313,2.829c2.54,0.522,4.411,1.834,4.744,3.421H59V25
+				H44z"/>
+			<rect x="28" y="61" fill="#FFFFFF" width="31" height="4"/>
+			<rect x="28" y="55" fill="#FFFFFF" width="31" height="4"/>
+			<rect x="28" y="49" fill="#FFFFFF" width="31" height="4"/>
+			<rect x="28" y="43" fill="#FFFFFF" width="31" height="4"/>
+			<rect x="28" y="35" fill="#FFFFFF" width="13" height="4"/>
+		</g>
+		<path fill="#FFFFFF" d="M100,69.361l-14.999-4.86L71.167,52.334c0,0-3.334-3.667-5-1.167s-3.666,9.167-3.666,9.167l-2.667-0.833
+			c0,0-3.999-1.667-3.833,1.333s1.5,3.167,1.5,3.167l5.833,5.5l7.833,9c0,0,2.834,2,6.667,1.5
+			c2.939-0.384,15.083,4.818,22.166,8.843V69.361z"/>
+	</g>
+</g>
+</svg>

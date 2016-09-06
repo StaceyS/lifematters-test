@@ -1,0 +1,874 @@
+/******************************************************************
+Stylesheet: General Page Stylesheet
+******************************************************************/
+
+// Common
+
+.main {
+	margin: 50px auto;
+	padding: 0;
+	float: none;
+
+	h1 {
+		display: block;
+		margin: auto;
+		}
+	}
+
+.main-section {
+	margin: 60px auto;
+	float: none;
+	clear: both;
+	text-align: center;
+
+	p {
+		font-size: 20px;
+		}
+	}
+
+
+// Interior Long Scroll
+
+.section-header-image {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+
+	img {
+		width: 100%;
+		height: auto;
+		}
+	}
+
+
+.interior-section {
+	margin: auto;
+	padding: 60px 10%;
+
+	a {
+		color: $orange;
+		font-weight: 700;
+
+		&:hover {
+			text-decoration: underline;
+			}
+		}
+
+  .learn-more-link {
+    color: white;
+    font-weight: 700;
+
+    &:hover {
+      color: $blue;
+      text-decoration: none;
+      }
+    }
+
+	img {
+		max-width: 600px;
+		height: auto;
+		display: inline-block;
+		margin: auto;
+		}
+
+	table {
+		width: 90%;
+		margin: 20px auto;
+		}
+
+  .table>thead>tr>th, 
+  .table>tbody>tr>th, 
+  .table>tfoot>tr>th, 
+  .table>thead>tr>td, 
+  .table>tbody>tr>td, 
+  .table>tfoot>tr>td {
+    padding: 20px 20px 18px;
+    font-size: 15px;
+    }
+
+	ul {
+		margin: 10px 0 20px 20px;
+
+		li {
+			margin: 8px 5% 8px 0;
+			max-width: 800px;
+			}
+		}
+
+  &.additional-resources,
+  &.caregiver-resources  {
+    padding: 30px 10%;
+    } 
+
+  &.news {padding-bottom: 0;}
+	}
+
+
+// Table 
+
+.table-striped>tbody>tr:nth-child(odd)>td, 
+.table-striped>tbody>tr:nth-child(odd)>th {
+  background-color: $lt-grey;
+  }
+
+
+/* Care Plan Process Diagram */
+
+#careplanprocess {
+  border-top: 1px solid $lt-grey;
+  padding-top: 30px;
+
+  .img-circle {
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    padding-top: 4%;
+    color: white;
+    background: $blue;
+    border: 3px solid $blue;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+
+    &:after {
+      content: "›";
+      position: absolute;
+      right: 0;
+      top: 40%;
+      font-size: 6em !important;
+      line-height: .0em !important;
+      color: #FF6219;
+      padding: 0;
+    }
+
+    h3 {
+    color: white;
+    padding-top: 24%;
+	   }
+  }
+
+  #carebegins_circ .img-circle:after {
+    content: none !important;
+  }
+  .img-circle:hover {
+    cursor: pointer;
+    background: white;
+
+    h3 {color: $blue;}
+  }
+}
+
+.cppover {
+  cursor: pointer;
+  background: #006CF8;
+  color: #002f6c;
+}
+
+#careplanprocess .well {
+  text-align: left;
+  color: #222;
+}
+
+#casestarts_circ, #assesment_circ, #matching_circ, #carebegins_circ {
+  padding-top: 1.25em;
+  padding-bottom: 50px;
+}
+
+#hwwddes {
+  border-top: 1px solid $lt-grey;
+  padding-top: 30px;
+  margin-top: 20px;
+  clear: both;
+  float: none;
+  }
+
+.caption h3 {
+  padding-top: 0 !important;
+  margin-top: 0;
+}
+
+
+/* Timeline */
+#ourhistorytimeline {
+  width: 100%;
+  height: 600px;
+}
+
+.timeline-main-hr {
+  width: 85%;
+  height: 4px;
+  background-color: #000000;
+  position: absolute;
+  display: block;
+  margin-top: 300px;
+  margin-left: 5%;
+  z-index: 1;
+}
+
+.timeline-circ-frame {
+  width: 100%;
+  height: 104px;
+  position: absolute;
+  z-index: 2;
+  margin-top: 250px;
+}
+
+.timeline-circ {
+  width: 104px;
+  height: 104px;
+  float: left;
+  margin-right: 3.5%;
+  label {
+    width: 100%;
+    margin-top: 34px;
+    font-size: 1.25em;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}
+
+.timeline-vr-top, .timeline-vr-bottom {
+  width: 2px;
+  margin-left: 51px;
+  background-color: #000000;
+  position: absolute;
+  display: block;
+  z-index: 1;
+  display: none;
+}
+
+.timeline-circ {
+  .timeline-vr-top {
+    margin-top: -200px;
+    height: 200px;
+  }
+  .timeline-vr-bottom {
+    margin-top: 104px;
+    height: 200px;
+  }
+}
+
+.timeline-enddot {
+  width: 6px;
+  height: 6px;
+  margin-left: -2px;
+  margin-top: -2px;
+  background-color: #000000;
+}
+
+.timeline-circ .timeline-vr-bottom .timeline-enddot {
+  position: absolute;
+}
+
+.timeline-desc {
+  display: block;
+  margin-left: .7em;
+  width: 500px;
+  max-width: 190px;
+  p {
+    font-size: .7em !important;
+    line-height: 1.15em;
+    margin: 0 0 1.15em;
+    padding: 0 !important;
+  }
+}
+
+
+// Testimonials
+
+.panel-default {
+  border: none;
+  box-shadow: none;
+  } 
+
+.testimonial {
+  .name {
+    display: block;
+    padding-left: 32px;
+    background: url(http://www.lifemattersusa.com/img/icons/user.svg) no-repeat left center;
+    background-size: 20px auto;
+    margin-top: 35px;
+
+    &:before {
+      content: "- ";
+      }
+  }
+  .bubble {
+    position: relative;
+    width: 100%;
+    padding: 2em;
+    background: rgba($blue, .125);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    &:after {
+      content: '';
+      position: absolute;
+      border-style: solid;
+      border-width: 17px 14px 0;
+      border-color: rgba($blue, .125) transparent;
+      display: block;
+      width: 0;
+      z-index: 1;
+      margin-left: -14px;
+      bottom: -17px;
+      left: 17%;
+    }
+  }
+}
+
+
+// Blog 
+
+.media {
+	margin-top: 60px;
+	}
+
+.blog-content {
+	.entry-title {
+    text-transform: none;
+    line-height: 1.1;
+    letter-spacing: 0;
+
+    a {
+    	color: $blue;
+
+    	&:hover {color: $orange;}
+    	}
+	  }
+
+	 .entry-author {
+	 	font: italic 16px/2.5 $lato;
+	 	color: $md-grey;
+		 }
+
+		h2 {
+			color: #222;
+			font: 600 20px/1.3 $lato;
+			}
+
+			a {
+				color: $orange;
+				font-weight: 600;
+
+				&:hover {text-decoration: underline;}
+				}
+
+		strong	{font-weight: 800;}
+  }
+
+
+
+.blog-content #content {
+  padding-top: 40px;
+
+  .media > .pull-left {
+    width: 20%;
+    margin-right: 20px !important;
+    display: none;
+  }
+
+}
+
+.blog-content img.post-featured {
+  margin-bottom: 30px;
+}
+
+img.media-object {
+  width: 90%;
+  height: auto;
+}
+
+
+h1 .p1 {
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.8;
+  margin: 0;
+  }
+
+.widget_recent_entries {
+  h4 {
+    font: 600 16px/1.3 $lato;
+    text-transform: uppercase;
+    }
+
+  ul {
+    font-size: 14px;
+    line-height: 1.4;
+    list-style: none;
+    margin-left: 0;
+
+    li {padding: 10px 0;}
+    }
+
+    .p1 {
+      display: inline;
+      font-weight: 400;
+      font-style: italic;
+      margin: 0;
+
+      &:before {
+        content: '(';
+        }
+      &:after {
+        content: ')';
+        }
+      }
+  }
+
+
+// Resources
+
+.resource-section {
+  list-style: none;
+  padding: 0 10%;
+}
+
+.resource-section-title {
+  font: 700 22px/1.4 $lato;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.resources {
+  margin: 0 0 50px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.single-resource {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.resource-title {
+  font: 600 17px/1.4 $lato;
+}
+
+.resource-type-icon {
+  width: 112px;
+  height: 112px;
+  -webkit-border-radius: 112px;
+  -moz-border-radius: 112px;
+  border-radius: 112px;
+  text-align: center;
+  img {
+    position: relative;
+    top: 25px;
+  }
+}
+
+/*Set alternating background colors for rows of icons */
+
+.single-resource-section {
+  &:nth-child(5n+1) .resource-type-icon {
+    background-color: #00b19f;
+    /*teal*/
+  }
+  &:nth-child(5n+2) .resource-type-icon {
+    background-color: #ff9e0d;
+    /*yellow*/
+  }
+  &:nth-child(5n+3) .resource-type-icon {
+    background-color: #fa1201;
+    /*red*/
+  }
+  &:nth-child(5n+4) .resource-type-icon {
+    background-color: #14CB50;
+    /*green*/
+  }
+  &:nth-child(5n+5) .resource-type-icon {
+    background-color: #fe5000;
+    /*orange*/
+  }
+}
+
+.resources li:nth-child(5n+5),
+.news-press-list li:nth-child(5n+5) {
+  clear: both;
+}
+
+.resource-desc {
+  font: italic 400 15px/1.4 $lato;
+  color: #777;
+  margin: 12px 0;
+}
+
+.resource-contact {
+  font: 700 14px/1.4 $lato;
+  p {
+    margin: 0 0 12px 0;
+  }
+}
+
+.page-content #content .resource-contact p:first-child {
+  padding-top: 0;
+}
+
+.resource-link {
+  font: 700 14px/1.4 $lato;
+  transition: opacity .2s;
+  color: $orange;
+  }
+
+.caregiver-contact-info {
+  border-top: 1px solid $lt-grey;
+  padding: 50px 10%;
+
+  h2 {
+    font-weight: 900;
+    color: #002f6c;
+  }
+  h3 {
+    margin: 30px 0 0 0;
+  }
+  p {
+    margin: 5px 0 10px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+// Additional Resources
+
+.additional {
+
+	.resource-title {
+		font: 600 20px/.8 $lato;
+
+		a:hover {
+			opacity: 1;
+			color: $orange;
+			}
+		}
+
+	.resource-image-box {
+		//border: 1px solid blue;
+		height: 120px;
+		//text-align: center;
+
+		.resource-image {
+			width: auto;
+			max-height: 100%;
+
+			}
+
+	}
+	}
+
+
+// Who We Are
+
+.our-team {
+  margin: auto;
+  padding: 30px 10%;
+  text-align: center;
+
+  .row {
+    margin-top: 10px;
+    }
+}
+
+.staffhdr {
+  text-align: center;
+  margin-bottom: 20px;
+  }
+
+.staff_thumbnail {
+  height: 465px;
+  max-height: 465px;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  padding: 30px 5%;
+  cursor: pointer;
+
+  h4 {
+    margin-top: 0;
+    text-align: center;
+    }
+
+  .bio {
+    display: none;
+    overflow: auto;
+  }
+
+  .sm-link {
+    min-width: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 25%;
+    text-align: center;
+    }
+}
+
+.staff-headshot {
+  width: 100%;
+  height: auto;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
+
+  &:hover {
+    opacity: .9;
+    }
+  }
+
+.previous-winners {
+  padding: 30px 10%;
+
+  .staff_thumbnail {
+    height: 365px;
+    max-height: 365px;
+    }
+  }
+
+// Staff Bio Modal
+
+.modal-body .bio {
+  padding: 1.5em 2em;
+}
+
+.staff_thumbnail .caption .name {
+  margin-top: 30px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+#teamModal .modal-body img {
+  margin: auto;
+}
+
+.row-centered {
+  text-align: center;
+}
+
+.col-centered {
+  display: inline-block;
+  float: none;
+  text-align: left;
+  margin-right: -4px;
+}
+
+.athirdspace {
+  width: 122px !important;
+  min-width: 122px !important;
+  height: 15px !important;
+  float: left;
+}
+
+#joinModal .modal-body {
+  padding-left: 35px;
+  padding-right: 35px;
+  ol li {
+    margin-bottom: 25px;
+  }
+  ul li {
+    margin-bottom: 0;
+  }
+}
+
+
+// Individual Bio Pages
+
+.single-staff_mbr {
+
+  .byline,
+  #sidebar-col,
+  .article-footer {display: none;}
+
+  .interior-section img {
+    max-width: 30%;
+    height: auto;
+    float: left;
+    }
+
+  article {
+    width: 65%;
+    float: left;
+    margin-left: 5%;
+    }
+
+  }
+
+
+
+// Lifematters Difference
+.interior-halfhalf {
+
+  div:nth-child(odd) {
+    clear: both;
+    padding-bottom: 30px;
+    }
+  }
+
+
+// News & Press
+
+.news-press-list {
+  list-style: none;
+  margin: 0;
+  padding: 30px 10%;
+  }
+
+.single-press {
+  padding: 40px 5% 40px 0 !important;
+
+  h3 {
+    font-size: 14px;
+    transition: color .2s;
+    }
+
+  a:hover {
+
+    h3 { 
+      text-decoration: none;
+      color: $orange;
+      }  
+    }
+
+  }
+
+
+// Events
+#tribe-events-pg-template {
+  padding-top: 30px;
+  }
+
+.recurring-info-tooltip, 
+.tribe-events-calendar .tribe-events-tooltip, 
+.tribe-events-week .tribe-events-tooltip {
+  z-index: 20;
+  }
+
+
+// PDF Preview Pages
+.html-code {
+  img  {
+    border: 1px solid $md-grey;
+    box-shadow: 3px 3px 10px rgba($md-grey, .5);
+    }
+  }
+
+.pdf-preview {
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+  .pdf-preview-thumb {
+
+    img {
+      transition: opacity .2s;
+
+      &:hover {opacity: .75;}
+
+      }
+    }
+
+  .checklist-preview-thumb {
+    width: 30%;
+   
+    img {
+      width: 100%;
+      height: auto;
+      border: 1px solid $md-grey;
+      box-shadow: 3px 3px 10px rgba($md-grey, .5);
+      }
+    
+    }
+
+  .pdf-preview-details {
+    width: 61%;
+    float: right;
+    }
+
+  .instructions {
+    width: 33%;
+    text-align: center;
+    }
+  }
+
+.wrapper,
+.grid-container,
+.interior-section ul {
+  width: 100%;
+  }
+
+
+// SERVICE LANDING
+
+.service-landing {
+  padding-top: 30px;
+
+  h1 {
+    // text-align: left;
+    margin: 15px 0;
+    }
+
+  section {
+    padding: 50px 0;
+    border-bottom: 1px solid #ddd;
+
+    &.service-summary {
+      background-color: white;
+      border: 1px solid $lt-grey;
+      padding: 30px 2.5%; 
+      box-shadow: 0 0 10px rgba(black, .15);
+      }
+
+    &:last-of-type {
+      padding-bottom: 0;
+      border-bottom: none;
+     }
+    }
+
+  .learn-more-link {
+    width: 160px;
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    clear: both;
+    margin-top: 25px;
+    }
+  }
+
+.service-contact-form {
+  width: 70%;
+  margin-left: 15%;
+
+  h2 {text-align: center; }
+
+  #field_4_5 {
+    width: 100%;
+    margin-right: 0;
+    }
+
+  .gform_button {
+    font: 600 16px/1.5 $lato;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 2px;
+    border: 2px solid $orange;
+    background: $orange;
+    padding: 8px 10%;
+    margin: 20px 0;
+    border-radius: 20px;    
+    transition: background-color .2s, color .2s;
+
+    &:hover {
+      background-color: white;
+      color: $orange;
+      }
+    }
+  }
+

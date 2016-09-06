@@ -1,0 +1,27 @@
+/*! Made with Bones: http://themble.com/bones :) */
+
+/******************************************************************
+Site Name: Lifematters USA
+Author: Digital Health Strategies
+
+Stylesheet: Main Stylesheet
+
+Helpful articles on Sass file organization:
+http://thesassway.com/advanced/modular-css-naming-conventions
+
+******************************************************************/
+
+/*********************
+IMPORTING PARTIALS
+*********************/
+
+// normalize: http://necolas.github.io/normalize.css/
+@import "partials/variables";
+@import "partials/functions";
+@import "partials/mixins";
+@import "partials/base";
+@import "partials/layout";
+@import "partials/home";
+@import "partials/pages";
+@import "partials/responsive";
+@media print { @import "partials/print"; }

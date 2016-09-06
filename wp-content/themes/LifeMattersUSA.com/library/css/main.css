@@ -1,0 +1,770 @@
+/******************************************************************
+
+!!!! WHEN UPDATING THE FULL SITE, REPLACE THIS CSS W/SASS !!!!
+
+******************************************************************/
+
+html, body { font-family: 'Lato', sans-serif; color:#222; font-size: 17px;}
+body {margin-top: 150px;}
+body.blank { margin-top: 0 !important;}
+a:link, a:visited { text-decoration:none !important; color:inherit !important; cursor: pointer !important; }
+a:hover {  }
+h1 { font-weight: 900; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { line-height: 1.35em !important; }
+.sink { display:block; position:absolute; bottom:0;}
+	
+/* Colors */    
+.orng_bg{background-color:#fe5000 !important; color:#FFF;} 
+.ltorng_bg{background-color:#ffd1bc !important;}
+.gold_bg{background-color:#FF9E0D !important;}
+.drkgold_bg{background-color:#98733D !important; color:#FFF;}
+.blue_bg{background-color:#002f6c !important; color:#FFF;}
+.ltblue_bg{background-color:#006CF8 !important;}
+.ltpurp_bg{background-color:#6054D2 !important;}
+.red_bg{background-color:#fa1201 !important;}
+.drkred_bg{background-color: #79170C !important}
+.green_bg{background-color:#14CB50 !important;}
+.ltteal_bg{background-color:#00FEE3 !important;}
+.teal_bg{background-color:#00B19F !important;}
+.wht_bg{background-color:#FFF !important;}
+.blk_bg{background-color:#000 !important;}
+.ltgrey_bg{background-color: #DDD !important;}
+.grey_bg{background-color: #AAA !important;}
+.drkgrey_bg{background-color: #222 !important;}
+
+.orng{color:#fe5000 !important;}
+.ltorng{color:#FF6219 !important;}
+.gold{color:#FF9E0D !important;}
+.drkgold{color:#98733D !important;}
+.blue{color:#002f6c !important;}
+.ltblue{color:#006CF8 !important;}
+.ltpurp{color:#6054D2 !important;}
+.red{color:#fa1201 !important;}
+.drkred{color: #79170C !important}
+.green{color:#14CB50 !important;}
+.teal{color:#00B19F !important;}
+.drkteal{color:#00B19F !important;}
+.wht{color:#FFF !important;}
+.blk{color:#000 !important;}
+
+/* Textures */
+.orng_tx, .gold_tx, .blue_tx, .green_tx, .teal_tx, .red_tx { background-attachment: fixed; }
+.orng_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/orng_texture.jpg) !important; }
+.gold_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/gold_texture.jpg) !important; }
+.blue_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/blue_texture.jpg) !important; }
+.green_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/green_texture.jpg) !important; }
+.teal_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/teal_texture.jpg) !important; }
+.red_tx { background-image: url(http://www.lifemattersusa.com/img/bg_textures/red_texture.jpg) !important; }
+
+/* Button Styles */  
+.hrz_btnA { padding:  7px 5px 10px; border:0; -moz-border-radius: 20px;-webkit-border-radius: 20px;border-radius: 20px; -khtml-border-radius: 20px; font-size:.9em; line-height: 1.15em; font-weight: 600; display: block; margin: auto; }
+.hrz_btnB{ width:100%; padding: 8px .75em 11px 1.15em; border:0; -moz-border-radius: 8px;-webkit-border-radius: 8px;border-radius: 8px; -khtml-border-radius: 8px; font-size:.85em !important; line-height: 1.15em; font-weight: 600; color:#555 !important; text-transform: uppercase; background-color: #EEE; text-align: left; margin: auto; }
+.hrz_btnB .arw_sym { display:block; float:right; text-align: right; margin-right:0; vertical-align: middle; color: inherit !important; }
+
+#browsehappy { position: fixed; z-index: 2000; top:0;}
+
+/* Header */
+header#header { position:fixed; width: 100%; height:160px; top:0; background-color: #FFF; padding-top: 30px; margin-top:0 !important; z-index: 11; font-size: 16px !important; }
+header#header #logo_row { padding-bottom: 10px; }
+header#header .logo { text-align: left; padding-left: 0; }
+header#header .logo img { width:100%; max-width: 345px; height:auto; margin-top: 0;}
+header#header .phone_num {text-align: center; margin-top: -14px;  }
+header#header .phone_num h1 { line-height: 1em !important; font-weight: 600; margin-top: 0em; }
+header#header .phone_num h1 .glyphicon { font-size: .7em !important; line-height: .7em; margin-right:.5em; }
+header#header .phone_num h3 { line-height: .5em; margin-top: 0em;}
+header#header .phone_num h3 .glyphicon {font-size: .7em !important; margin-right:.5em;}
+header#header .login_btn { text-align: right; }
+header#header .login_btn img{ height:1em; width:auto; vertical-align: text-bottom; margin-right: .5em; }
+
+/* Footer */
+footer { background-color: #DDD; padding: 20px 0 0 !important; position: absolute; z-index: 10; width:100%; font-size: 16px !important; }
+footer ul {list-style: none; margin: 0; padding:0;}
+footer li { display: block; padding:.5em 0; line-height: 1.15em; overflow: visible;}
+footer li:first-child { font-weight: 600; margin-bottom: 1em; }
+div.legal { font-size: .85em; line-height: 1.15em; color: #000 !important; padding: 2em 0 !important; }
+#ftr_nav .container { padding: .65em 0 3em;}
+#ftr_legal .container { padding: .25em 0;}
+.ftr-col {float: left; width:14%; padding-right: 1%;}
+.ftr-col:last-child{ float: right;}
+
+#contact_btn{ }
+#locations_btn{}
+#onlineform_btn{}
+#clientlogin_btn{display: block; background: url(http://www.lifemattersusa.com/img/icons/user_blk.svg) no-repeat -20px center; background-size: 1em auto;}
+#phonenum_btn{}
+
+/* Navigation */  
+header#header nav{ padding: 0 !important; display:block; }
+header#header nav ul {width: 100%; padding: 14px 0; list-style: none; margin: 0; padding: 0; display: block;  }
+header#header nav li { width:15%; display: inline-block; text-align: center; min-height: 50px; float: left; line-height: 1.05em; font-weight: 600; text-transform:uppercase !important; background-color: #DDD; padding: 1.1em 0 0 0;}
+header#header nav li:hover {cursor: pointer;-webkit-box-shadow: 0 10px 12px -3px #AAA; -moz-box-shadow: 0 10px 12px -3px #AAA; box-shadow: 0 10px 12px -3px #AAA;}
+header#header nav li:nth-child(2){width:19%;}
+header#header nav li:nth-child(5){width:12%;}
+header#header nav li:nth-child(6){width:13%;}
+header#header nav li:last-child{ -moz-border-radius: 0 8px 8px 0;-webkit-border-radius: 0 8px 8px 0; border-radius: 0 8px 8px 0; -khtml-border-radius: 0 8px 8px 0; float: right;}
+header#header nav li a {display: inline-block;}
+header#header nav li a:hover { text-decoration: none !important; }
+header#header nav li#newsevents{ padding-top:.55em !important; }
+header#header nav li.contact { color:#FFF; padding-top:1.05em !important;font-size: .8em;  }
+header#header nav li.join { }
+header#header nav li.home {-moz-border-radius: 8px 0 0 8px;-webkit-border-radius: 8px 0 0 8px; border-radius: 8px 0 0 8px; -khtml-border-radius: 8px 0 0 8px;  min-width:6%; width: 6%; max-width: 52px; padding: .5em 1% 0; color:#FFF; font-size: 1.45em;}
+header#header nav li.join, header nav li.contact {width:10% !important; padding-left:.125em !important;  max-width: 115px !important;  }
+header#header nav li.home:hover, header nav li.join:hover, header nav li.contact:hover { -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow:none !important; }
+
+/* Sub Navigation */
+header#header nav li ul {display:none;}
+header#header nav li ul li, header nav li ul:first-child li:first-child {width:inherit !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important; box-shadow:none !important; padding: 2.5em 20px 1em !important;}
+header#header nav li ul:first-child li:first-child { padding-top: 3.5em !important;}
+header#header nav li:hover ul { display:block; }
+header#header nav li ul li{ display:block; width: 100%; float: none;  }
+header#header nav li:nth-child(6) ul li {padding-left:10px !important; padding-right: 10px !important;}
+/* header#header nav li:nth-child(6) ul li:nth-child(2){ font-size: .75em;} */
+
+/* Mobile Header */
+header#mhdr { position: absolute; z-index: 15; padding-bottom:30px; background-color: #FFF; width:100%;}
+header#mhdr .row { padding-left:0 !important; padding-right:0 !important; margin-left: 0 !important; margin-right:0 !important; }
+header#mhdr{ padding-left:0 !important; padding-right:0 !important;}
+header#mhdr div{ text-align: center; }
+header#mhdr #m_menu button.mob_menu { padding:  0.65em 10px 0.65em 33.3% !important; color:#FFF !important; background-image: url('http://www.lifemattersusa.com/img/icons/menu.png'); background-size: 15%; background-position: 10% center; background-repeat: no-repeat;}
+header#mhdr .phone_num { padding: 15px 0 0 !important; background-color:#002f6c; color: #FFF; font-size: .8em; line-height: .5em; margin-bottom: 2em; }
+header#mhdr .phone_num h1 { font-size:1.65em; font-weight: 900; margin: .7em 0 !important; line-height: 1em !important; }
+header#mhdr .phone_num h3 { font-size:1.25em; margin-top: 1em !important; margin-bottom: 0 !important; padding-top: .8em; padding-bottom: .8em; background-color:#006CF8;  }
+header#mhdr .phone_num h1 .glyphicon, header#mhdr .phone_num h3 .glyphicon, header#mhdr .login_btn img{ margin-right: .5em; vertical-align: baseline; }
+header#mhdr .login_btn { font-size:1.25em; color:#FFF !important; padding-top: .8em; padding-bottom: .8em; background-color:#FF9E0D; margin-bottom: 2em; }
+header#mhdr .login_btn img{ width: 7%; margin-right: .5em; vertical-align: baseline; }
+header#mhdr .logo { text-align: center;}
+header#mhdr .logo img { width:100%; max-width:284px; height:auto; max-height: 53px;}
+
+/* Mobile Nav*/
+#mobile_nav { position: fixed; height: 90%; top:5%; z-index: 20; width:100%; overflow:scroll; display:none; }
+#mobile_nav nav { padding: 0 .5em; }
+#mobile_nav nav ul { list-style: none; margin: 0; padding: .5em 1em; background-color: #ddd; }
+#mobile_nav nav ul li { padding: .5em 0; padding-left: .5em; font-size: 1em; font-weight: 600; text-transform: uppercase; }
+#mobile_nav nav ul li:hover { background-color:#AAA; }
+#mobile_nav nav ul li.sub { padding-left: 2.5em;font-weight: 400 !important; }
+#mobile_nav_close_top  { position: fixed; z-index: 21; width: 96%; top:5%; display:none;}
+#mobile_nav_close_top button { font-size: 2em;}
+
+/* Compressed Nav */
+#m_compressed { padding-left:0 !important; padding-right:0 !important; margin-left: -30px !important; margin-right:-30px !important;}
+#m_compressed .logo, #m_compressed .phone, #m_compressed .email, #m_compressed .login, #m_compressed .m_menu { min-height: 10px; height:60px; padding-top:1em; padding-bottom:1em; overflow: hidden; font-size: .75em; }
+#m_compressed span { font-size: 1.75em;}
+#m_compressed img { max-height: 1.75em; }
+#m_compressed .logo img { max-height: 100px; }
+#m_compressed img, #m_compressed span { float: none;}
+
+/* Quote */
+.quote { background-color: #EEE; padding: 3em 0 4.5em; margin-top: 55px;  }
+.quote blockquote { font-family: 'Libre Baskerville', serif; font-size: 1.7em; font-weight: 400; border: none; margin:0; padding:0; display: block; font-style: normal !important;}
+.quote button { font-family: 'Lato', sans-serif; font-size: .65em !important; margin-top: 1em; margin-bottom: 2em; }
+
+/* Content */
+#primary_home .row { padding-bottom: 15px;}
+#primary_home .home_vid { padding-top: 45px; }
+#primary_home .home_sp { padding-bottom: 25px;}
+#primary_home .home_vid .hdr { text-transform: uppercase; font-weight: 900;text-align: center;}
+#primary_home .home_vid .bdy {padding-bottom: 2em;}
+#primary_home .home_vid h1 { font-weight: 900; font-size: 3em; text-transform: uppercase; }
+#primary_home .home_sp .hdr h1 { font-size:2.7em; text-transform: uppercase; text-align: center; }
+#primary_home .home_sp .hdr hr {border : 0; height : 1px; margin : 1em 0;}
+#primary_home .home_sp .hdr p { margin: 1.5em 0; }
+#primary_home .home_sp .hdr p .readmore { font-weight: 600; color:#fe5000 !important; text-decoration: none !important; }
+#primary_home .home_sp .hdr p .readmore:after { content:" ››"}
+#primary_home .home_sp h3 { text-align: center; margin:1.35em 0;}
+#primary_home .hdr .hdricon{ width:100px; height: 100px; margin: -50px auto 0 !important; border:8px solid #FFF !important; }
+#primary_home .vrtpnl { min-height:460px; text-align: left !important; }
+#primary_home .vrtpnl .hdricon{ width:86px; height: 86px; margin: 0 auto !important;}
+#primary_home .vrtpnl h3 { text-align: center; font-weight: 600; line-height: 1.15em !important;}
+#primary_home .vrtpnl p { position: relative; padding-bottom: 2em;}
+#primary_home .vrtpnl button { position: absolute; bottom: -40px; width:90%;  }
+#primary_home .our_story .awards .row{ padding-top: 50px !important;}
+#primary_home .our_story .awards h3, #primary_home .our_story .awards h4 { font-weight: 900; }
+#primary_home .our_story .awards h4, #primary_home .our_story .awards h5 { margin-bottom: 0; padding-bottom: 0; }
+#primary_home .our_story .awards h5 { margin-top: .5em;}
+#primary_home .our_story .vrtpnl { height: 420px; }
+
+#primary_home .our_story .awards div img { max-width: 70%; vertical-align: middle;}
+
+#primary_home .howwecanhelp .vrtpnl { height: auto; }
+
+.hdricon { display: block;}
+
+/*
+#vidthumb { background: url(http://lifemattersusa.com/wp-content/uploads/2014/11/lifematters_video_titlecard_frame.jpg) no-repeat center top; background-size: 100% auto; min-height:440px; padding:24px 24px 100px; }
+#vidthumb:hover { cursor: pointer; }
+#vidthumb iframe { padding:20px 22px 96px 22px; }
+*/
+
+/* General Page */
+.page-content { margin-top: 0; padding-bottom: 50px; }
+.page-content a:link, .page-content a:visited { font-weight: 600; color:#fe5000 !important; }
+.page-content .container-sp { width:1500px; height:330px; position: absolute; z-index: -1; background-position: center top; background-size: 1500px auto; background-repeat: no-repeat; background-origin:border-box; margin-top: 0; }
+.page-content .row { margin-top: 0; padding-top: 0; }
+.page-content #content { margin-top:0; padding-top:0; padding-bottom: 50px; position: relative !important; }
+.page-content #content p:first-child, .page-content #content h1:first-child, .page-content #content h2:first-child, .page-content #content h3:first-child, .page-content #content h4:first-child, .page-content #secondary, #events h1.entry-title { padding-top: 25px;}
+.page-content #content h1 { text-transform: uppercase; }
+.page-content .sec_hdr { margin-top: 350px;}
+.page-content .sec_body { display: inline-block; padding-bottom: 50px; }
+
+/* General Blog */
+.blog-content #content{ padding-top: 60px;  padding-bottom: 50px;}
+.blog-content a:link, .blog-content a:visited { font-weight: 600; color:#fe5000 !important; }
+.blog-content #content .entry-title { margin: 0 !important; padding: 0 !important; margin-bottom: .75em !important; font-family: 'Libre Baskerville', serif; line-height: 1.2em !important; text-transform: none !important;}
+.blog-content #content .entry-title a:link, .entry-title a:visited { color: inherit !important;}
+.blog-content #content .media > .pull-left { margin-right:20px !important; }
+.blog-content #content img.post-featured { width:100% !important; height:auto !important; margin-bottom: 2em;}
+
+#sidebar-col { padding-top: 60px; }
+.sidebar .widget ul {margin: 0; padding: 0; list-style: none;}
+.sidebar .widget ul li { margin-bottom: 1em; padding: .5em;}
+.sidebar .widget ul li:hover { background-color: #DDD; }
+
+#howwecanhelpdiagram { display: block; position: relative; width: 80%; margin: 30px auto 100px; min-height: 400px; }
+
+/* Paralaxx headers */
+/*
+
+.page-content div.container-sp { background-attachment: scroll; left:-27%; }
+.page-content h1.container-sp, h2.container-sp { color:#FFF; margin-top: 240px !important; font-size: 2.85em; font-weight: 900; padding: .25em; margin-left: -.25em; text-transform: uppercase; line-height: 1em !important; width: auto; margin-bottom: 1em; position: absolute; margin-bottom: 350px !important;}
+.page-content div.container-sp-height { padding-top: 350px !important;}
+.page-content ul li{ }
+*/
+
+table.container-sp {width:100%;}
+table.container-sp tr td:first-child { width: 33%; }
+table.container-sp tr td:before { content:"• "; }
+
+#sonetoModal .modal-body{ overflow: hidden; padding-top: 10px;}
+iframe#soneto { margin-top:-70px; top:0; display:block; overflow: hidden; }
+
+#rtmenu { display:block; overflow:visible;margin-top: 75px; width:inherit; max-width:226px; padding: 15px 0; background-color: #DDD; position:fixed; list-style: none; z-index:5;}
+#rtmenu li a { font-size: 1.35em !important; font-weight: 400; }
+#rtmenu li .navicon { margin-left: -30px; margin-right: 10px; }
+#rtmenu .faq { font-size: .9em !important; }
+
+.anchor{ position:relative; display: block; float: left; top:-290px; }
+
+table { margin-top:2em; margin-bottom:2em; }
+table thead { font-size: 1.75em; }
+table tbody {  }
+table td { vertical-align: top; padding-right: 50px;}
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {  background-color:#ffd1bc !important; }
+
+.panel button.important img { margin-right: .9em; }
+.panel button.important { font-size: 1em !important; line-height: 1.5em; color:#000000; font-weight: 600; }
+
+#lmulogo { width:70%; height:auto; }
+
+/* Job Listing */
+#primary_jobdetails{ padding-top: 50px;}
+#primary_jobdetails .breadcrumb { color: #777;}
+#primary_jobdetails .breadcrumb .glyphicon { margin-right: 7px; font-size: .85em;}
+#joblist ul { list-style: none; margin:0; padding:0;}
+#joblist ul li { padding: 1.5em .5em; padding-left: 4em; margin-right:2%; border-bottom: 1px solid #222; background: url(http://www.lifemattersusa.com/img/icons/note_blk.svg) no-repeat left center; background-size: 60px auto; }
+#joblist .hdr {border-bottom: #222 solid 2px; padding-bottom: 10px;}
+#joblist ul li:nth-child(3n){ margin-right:0; }
+button.applyjob, button.dnldjob { min-width: 300px; max-width: 300px !important; margin: 0; margin-bottom:1.25em; padding-left: 3em; padding-right: 3em;}
+
+/* Contact Us Form */
+.locaddresses { min-height: 300px; }
+form#contact { margin-top: 30px;}
+form#contact button.hrz_btnA { width:100%;}
+#contactusform input[type="text"], #contactusform input[type="tel"], #contactusform input[type="email"]{ width: 100%;}
+#contactusform .contactus_textarea textarea{ width:100%;}
+#contactusform .contactus_submit input{width:100%; margin-top: 1em;}
+
+.edit-link { position: fixed; padding:1.5em; bottom:0; left:0; z-index: 200; }
+
+.section_end { display:block; padding-bottom: 50px; }
+
+h1.widget-title, h2.widget-title, h3.widget-title, h4.widget-title { font-size: 1em;}
+
+/* Care Plan Process Diagram */
+#careplanprocess .img-circle { width:180px; height:180px; text-align: center; padding-top: 25px; color:#FFF; background:#002f6c; -moz-transition: all .2s ease-in; -o-transition: all .2s ease-in; -webkit-transition: all .2s ease-in; transition: all .2s ease-in; }
+#careplanprocess .img-circle:after { content:"›"; position: absolute; right: 0; top:40%; font-size: 6em !important; line-height: .0em !important;  color:#FF6219; padding: 0;}
+#careplanprocess #carebegins_circ .img-circle:after { content: none !important;}
+#careplanprocess .img-circle:hover, .cppover{ cursor:pointer; background: #006CF8 !important; color:#002f6c !important;}
+#careplanprocess .well { text-align: left; color:#222; }
+#casestarts_circ, #assesment_circ, #matching_circ, #carebegins_circ  { padding-top: 1.25em; padding-bottom: 2em; }
+#casestarts_circ .img-circle{-moz-box-shadow: inset 0 0 180px #FFF; -webkit-box-shadow: inset 0 0 180px #FFF; box-shadow: inset 0 0 180px #FFF;}
+#assesment_circ .img-circle{-moz-box-shadow: inset 0 0 130px #FFF; -webkit-box-shadow: inset 0 0 130px #FFF; box-shadow: inset 0 0 130px #FFF;}
+#matching_circ .img-circle{-moz-box-shadow: inset 0 0 90px #FFF; -webkit-box-shadow: inset 0 0 90px #FFF; box-shadow: inset 0 0 90px #FFF;}
+
+.caption h3 { padding-top: 0 !important; margin-top: 0; }
+
+/* Who We Are Employee Thumbnails and Modals */
+#primary_whoweare #content .staffhdr { text-align: center;margin-top: 1.15em !important; margin-bottom: .75em !important;}
+.staff_thumbnail { height:440px; max-height:440px; overflow: hidden; border: 0; border-radius: 0; padding:0; cursor: pointer;}
+.staff_thumbnail .bio { display: none; overflow: auto;   }
+.staff_thumbnail button { font-size: 1em; width: 85%; position: absolute; bottom:30px;}
+.modal-body .bio { padding:1.5em 2em; }
+.staff_thumbnail .caption .name { margin-top: .35em; line-height: 1.075em !important; }
+#teamModal .modal-body img {margin:auto;}
+
+.row-centered { text-align:center; }
+.col-centered { display:inline-block; float:none; text-align:left; margin-right:-4px; }
+.athirdspace { width:122px !important; min-width:122px !important; height:15px !important; float:left;}
+
+#joinModal .modal-body { padding-left: 35px; padding-right: 35px; }
+#joinModal .modal-body ol li { margin-bottom: 25px;}
+#joinModal .modal-body ul li { margin-bottom: 0;}
+
+/* Testimonials */
+.testimonial .name { display: block; padding-left: 32px; background: url(http://www.lifemattersusa.com/img/icons/user.svg) no-repeat left center; background-size: 20px auto; }
+.testimonial .bubble  { position: relative; width:100%; padding: 1em; background: #EEE; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+border-radius: 5px; }
+.testimonial .bubble:after {
+content: ''; position: absolute; border-style: solid; border-width: 17px 14px 0; border-color: #EEE transparent; display: block; width: 0; z-index: 1; margin-left: -14px; bottom: -17px; left: 17%; }
+
+/* Our Story*/
+.affiliations .title, .title { margin-bottom: 20px; }
+.affiliations, .strategicpartners { margin-bottom: 30px; }
+.affiliations:last-child, .strategicpartners:last-child { margin-bottom: 0; }
+.affiliations .thumb, .strategicpartners .thumb { width: 100%; min-height: 136px; background-repeat: no-repeat; background-position:center center; background-size: 100% auto; }
+.affiliations .affllogo, .strategicpartners .affllogo  { text-align: center; }
+.affiliations .affllogo .caption, .strategicpartners .affllogo .caption { line-height: 1em !important; }
+.affiliations .affllogo .caption h3, .strategicpartners .affllogo .caption h3 { font-size: .75em !important; margin-top: 0;}
+
+/* Caregiver Spotlight */
+/* #caregiverspotlight, #prevstar { padding:40px 0; background: #DDD url(http://www.lifemattersusa.com/img/bg_patterns/caregiverspot_bg.gif) fixed;   } */
+#caregiverspotlight .thumbnail, #prevstar .thumbnail{ background-color: transparent !important; }
+#caregiverspotlight .hdr, #prevstar .hdr{ text-align: center; }
+#caregiverspotlight .body, #prevstar .body{ margin:30px 0;}
+#caregiverspotlight .thumb, #prevstar .thumb{ margin-bottom: 50px; }
+#caregiverspotlight .thumb:hover, #prevstar .thumb:hover{ cursor: pointer; }
+#caregiverspotlight .thumb .name, #prevstar .thumb .name{ background-color: #FFF; display: block;  position: absolute; bottom:5%; left:5%; padding: 5px 15px; width: 90%;}
+#caregiverspotlight .thumb button.hrz_btnA, #prevstar .thumb button.hrz_btnA{ width:100%; display: block; position: absolute; bottom:-70px; left:5%; width: 90%; }
+#caregiverspotlight .thumb .details, #prevstar .thumb .details{ display: none;}
+
+/* Timeline */
+#ourhistorytimeline { width: 100%; height:600px; }
+.timeline-main-hr { width: 85%; height:4px; background-color:#000000; position:absolute; display:block; margin-top:300px; margin-left:5%; z-index:1; }
+.timeline-circ-frame { width:100%; height:104px; position:absolute; z-index: 2; margin-top: 250px; }
+.timeline-circ { width:104px; height:104px; float:left; margin-right:3.5%; }
+.timeline-circ label { width:100%; margin-top:34px; font-size: 1.25em; color:#FFFFFF; text-align: center; }
+.timeline-vr-top, .timeline-vr-bottom { width: 2px; margin-left:51px; background-color:#000000; position:absolute; display:block; z-index: 1; display:none;}
+.timeline-circ .timeline-vr-top { margin-top:-200px; height:200px; }
+.timeline-circ .timeline-vr-bottom { margin-top:104px; height:200px; }
+.timeline-enddot { width:6px; height:6px; margin-left: -2px; margin-top: -2px; background-color:#000000; }
+.timeline-circ .timeline-vr-bottom .timeline-enddot { position: absolute;}
+.timeline-desc { display:block; margin-left: .7em; width:500px; max-width:190px; }
+.timeline-desc p { font-size: .7em !important; line-height: 1.15em; margin: 0 0 1.15em; padding: 0 !important;   }
+
+/* LifeMatters Difference */
+.panel-body h2 { margin-top: 0px !important;}
+#lmd {min-width: 663px; width:100%;}
+
+/* Print Header*/
+header#print { display: none; }
+header#print .phone_num {text-align: center;}
+header#print .pnum { font-weight: 600; font-size: 1.3em; line-height: 1.1;}
+
+/* Newsletter and Press Release Media Downloads */
+.mediadwnld { text-align: center !important; }
+.mediadwnld .thumbnail { min-height: 240px; }
+.mediadwnld img { width:100%; height: auto; }
+.mediadwnld .header { text-align: center !important; }
+
+.newsletter-content #content .row, .pressrelease-content #content .row { padding-bottom: 35px;}
+.newsletter-content #content .title-row, .pressrelease-content #content  .title-row{ padding-top: 30px;}
+.newsletter-content #content .dwnld { font-family: FontAwesome; content: "\f0f6"; display: inline-block; padding-right: 10px; vertical-align: middle; font-size: 1.5em; }
+
+/* Events */
+table.tribe-events-calendar thead { font-size:.9em; }
+.event-content, #tribe-events-pg-template { padding-top: 50px; }
+#tribe-bar-views .tribe-bar-views-list, .tribe-bar-disabled { z-index: 9 !important; }
+#events .entry-title a:link, #events .entry-title a:visited { color: #fe5000 !important; }
+#events .entry-title a:hover { color: #fe5000 !important; }
+button.rsvp { padding:2px 10px !important; margin-left: 1em !important; display: inline-block !important; font-size: .9em !important; vertical-align: bottom !important; }
+button.rsvp .fa {margin-right: .33em;}
+#rsvpform { padding-top: 190px; margin-top: -180px; margin-bottom:15px; border-bottom: 1px dashed #CCCCCC;}
+#rsvpform .entry-title { padding-bottom: .55em; border-bottom: 1px dashed #CCCCCC;}
+#rsvpform .entry-title .fa { margin-right: .25em;}
+.tribe-events-content p:first-child {   padding-top: 0 !important; }
+.tribe-events-content p, a.tribe-events-gmap { font-size: .8em !important;}
+.tribe-events-loop .tribe-events-event-meta { font-size: 1.15em; }
+.tribe-events-single .tribe-events-event-image img { max-width: 50%; }
+
+/* Affiliates */
+.indv_afl{ text-align: center; height:280px; padding-bottom:120px; overflow: visible; }
+.indv_afl div.afl_logo { width:100%; height: 180px; background-size: 100% auto; }
+.afl_row { text-transform: uppercase; }
+
+#rsvpform input[type=text]{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}
+#rsvpform input[type=submit]{ padding:  10px 30px 13px; border:0; -moz-border-radius: 25px;-webkit-border-radius: 25px;border-radius: 25px; -khtml-border-radius: 25px; font-size:1.15em; line-height: 1.15em; font-weight: 600; display: block; background-color:#002f6c !important; color:#FFF;}
+#rsvpform li.gfield { margin-bottom: 10px;}
+.single-tribe_events #tribe-events-footer li { width:auto !important; }
+.gform_wrapper .field_sublabel_above .ginput_complex label { margin-top: 0 !important; }
+
+/* HOMEPAGE OVERLAY */
+/*@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,100,900);*/
+.popup {
+        width: 450px;
+        height: 450px;
+        background: #FFFFFF;
+        border: 2px solid #000000;
+        margin: 40px auto;
+        position: fixed;
+        z-index: 99;
+        left: 50%;
+        top: 50%;
+        margin-left : -225px; /* half of the width  */
+        margin-top  : -225px; /* half of the height */
+}
+.overlay {
+    width: 100%;
+    height: 1000px;
+    overflow: hidden;
+    background: RGBA(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 92;
+}
+.popup-close {
+    color: #000000;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+.popup-close a {
+    text-align: center;
+    color: #002f6c;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.popup-logo {
+    width: 220px;
+    margin: 40px auto 20px auto;
+}
+.popup h2 {
+    color: #fe5000;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    line-height: 38px;
+    font-size: 26px;
+    font-weight: bold;
+
+}
+a.popup-link {
+    text-decoration: none;
+    color: #002f6c;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    float: right;
+    margin-right: 25px;
+    margin-top: 5px;
+}
+a:hover.popup-link {
+    text-decoration: underline;
+    color: #002f6c;
+}
+.inline-blocks {
+    width: 49%;
+    display: inline-block;
+    margin: 8px auto;
+}
+
+.inline-blocks a {
+    text-decoration: none;
+}
+
+.button {
+    background: #002f6c; 
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 12px;
+    width: 180px;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    align-content:center;
+    flex-direction:column; /* column | row */
+    height: 103px;
+    display: table-cell;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button p {
+    text-align: center;
+    margin: 10px auto;
+    padding: 10px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    padding-top: 10px !important;
+}
+/* END HOMEPAGE OVERLAY */
+
+@media screen and (max-width:1199px) {
+.page-content .container-sp:first-child { margin-top:-330px; }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media screen and (max-width:991px) {
+	.page-content .home_vid h1 { font-size: 2.5em; }
+	header nav li { font-size: .8em !important; padding-top: 1.45em }
+	header nav li.home { font-size: 1.25em !important; padding-top: .675em }
+	header nav li.contact { font-size: .725em !important;  padding-top: .7em; min-width:5%; width:7%; padding-left: 0; padding-right:0;}
+	header .phone_num {line-height:1em !important; margin-top:0; padding-bottom: .35em;  }
+	header .phone_num h1 { margin-top: .7em; }
+	header .phone_num h3 { margin-top: .3em;}
+}
+
+@media screen and (max-width:980px){
+	header#header nav li.home { padding-top:.65em;}
+	header#header nav li { padding-top: 1.485em; }
+	.affiliations .thumb, .strategicpartners .thumb { max-height: 250px; max-width: 300px; height:auto; background-position: center top; margin:auto; }
+	
+}
+
+@media screen and (min-width:768px){
+	#primary_home { padding:0; }
+	#primary_home .row-centered { text-align: center; display: table-row; }
+	#primary_home .col-centered { display: table-cell; float: none; vertical-align: top; }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (max-width:767px){
+	body {margin-top: 0;}
+	
+	header#header { padding-top: 0; padding-bottom: 0; margin-bottom: 0; height:0px; -webkit-box-shadow: 0 30px 30px 60px #FFF; -moz-box-shadow: 0 30px 30px 60px #FFF; box-shadow: 0 30px 30px 60px #FFF; }
+	header#header div#logo_row{ display:none; }
+
+	.hrz_btnA { font-size: .9em;}
+	.hrz_btnB { font-size: 1.25em;}
+	
+	header .mobile_alt { position:absolute; top:0; right:0px; width:100px !important; height:100px !important; margin: 0 !important; padding:0 !important;  }
+	header .mobile_alt button { width:100px !important; height:100px !important; -moz-border-radius:0 !important;-webkit-border-radius: 0 !important; -khtml-border-radius: 0 !important; border-radius: 0 !important;}
+	header .mobile_alt:nth-child(2){right: 100px !important; }
+	
+	header#mhdr {display:block;}
+	
+	#m_compressed .logo img { margin-left: 5%; margin-top: 5%; }
+	
+	/* #vidthumb{ padding:5px; min-height:210px;}
+	   #vidthumb iframe{ padding:0; } */
+	
+	#primary_home { position: relative; top: 100px; padding-left: 15px; padding-right: 15px; }
+	/* #primary_home .home_sp { padding-bottom: 25px;} */
+	#primary_home .home_vid { padding-top: 60px; }
+	#primary_home .vrtpnl { min-height:380px; margin-bottom: 30px; }
+	/* #primary_home .vrtpnl { min-height:380px; width:78%; margin-left:11%; margin-bottom: 30px; float:none; } */
+	#primary_home .vrtpnl .hdricon{ width:86px; height: 86px; margin: 0 auto !important;}
+	#primary_home .vrtpnl h3 { text-align: center; font-weight: 600; line-height: 1em !important;}
+	#primary_home .vrtpnl p {}
+	#primary_home .vrtpnl button { position: absolute; bottom:0; width:100%; }
+	#primary_home .awards div img { padding-bottom: 30px; }
+	#primary_home .awards .col-sm-2 { margin-bottom: 10px; }
+	
+	
+	#primary_whoweare { padding-left: 15px; padding-right: 15px; }
+	
+	.modal-body .bio { padding:1.5em .5em; }
+	
+	.staff_thumbnail { height:380px; max-height:380px; }
+	
+	.site_content { padding-top: 0; padding-bottom: 50px;  }
+	.page-content  { padding-top: 60px !important;}
+	#content { padding-top:120px !important; }
+	#content h1 { margin-top: 60px; }
+	
+	.affiliations .affllogo .caption, .strategicpartners .affllogo .caption, .indv_afl .caption{ line-height: 1em !important; }
+	.affiliations .affllogo .caption h3, .strategicpartners .affllogo .caption h3 { font-size: 1em !important; margin-top: 0;}
+	
+	#careplanprocess .img-circle { width:180px; height:180px; margin:auto; margin-bottom: 1.5em; }
+	#careplanprocess .img-circle:after { content: none;  }
+	
+	#lmulogo { width:100%; height:auto; }
+	
+	.quote { padding: .7em 0 3em;  }
+	.quote blockquote { font-size: 1em; }
+	
+	.page-content div.container-sp { background-attachment: scroll; width:100%; height:150px; left:0; position: absolute; z-index: -1; background-position-x: center; background-position-y: top; }
+	.page-content div.container-sp-height { padding-top: 170px !important;}
+	
+	#howwecanhelpdiagram { width: 90%; margin: 20px auto 40px; min-height: 150px; }
+	
+	#primary_jobdetails .breadcrumb { margin-top: 40px;}
+	
+	#lmd {min-width:100px; max-width: 300px;}
+	
+	.blog-content #content { margin-top: 120px; }
+	.blog-content #content .entry-title, .blog-content h1.entry-title { margin: 0 !important; padding: 0 !important; margin-bottom: .75em !important; font-size: 1em !important; line-height: 1.2em !important; text-transform: none !important;}
+	.blog-content #content .entry-title a:link, .entry-title a:visited { color: #222222 !important;}
+	.blog-content #content .entry-title a:hover { color:#fe5000; }
+	.blog-content #content .media > .pull-left { margin-right:20px !important; }
+	.blog-content #content img.post-featured { width:25% !important; margin-bottom: 2em;}
+	img.media-object { width:40%; height:auto; }
+	
+	.tribe-events-single .tribe-events-event-image img { max-width: 100%; }
+	
+	footer .ftr-col {float: none; width:100%; padding-left: 2em;}
+	footer .ftr-col:last-child{ float: none;}
+	footer li:first-child { margin-bottom:0; margin-top: 1.33em; }
+}
+
+
+/******************************************************************
+
+!!!! WHEN UPDATING THE FULL SITE, BREAK THIS INTO A PARTIAL !!!!
+
+Stylesheet: Resource Lists
+Author: StaceyS (updated 4.26.16)
+
+This stylesheets supports pages with lists of external resources 
+such as the 'Additional Resources' and 'Caregiver Resources' 
+pages under the 'Resources' section. 
+
+******************************************************************/
+
+.resource-section {
+	list-style: none;
+	padding: 0;
+	}
+
+.resource-section-title {
+	font: 700 22px/1.4 'Lato', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border-bottom: 1px solid #dddddd;
+	padding-bottom: 10px;
+	margin-bottom: 40px;
+	}
+
+.resources {
+	margin: 50px 0;
+	padding: 0;
+	list-style: none;
+	}
+
+.single-resource {
+	padding-top: 30px;
+	}
+
+.resource-title {
+	font: 600 17px/1.4 'Lato', sans-serif;
+	}
+
+.resource-type-icon {
+	width: 112px;
+	height: 112px;
+	-webkit-border-radius: 112px;
+	-moz-border-radius: 112px;
+	border-radius: 112px;
+	text-align: center;
+	}
+
+.resource-type-icon img {
+	position: relative;
+	top: 25px;
+	}
+
+/*Set alternating background colors for rows of icons */
+.single-resource-section:nth-child(5n+1) .resource-type-icon {
+	background-color: #00b19f; /*teal*/
+	}
+
+.single-resource-section:nth-child(5n+2) .resource-type-icon {
+	background-color: #ff9e0d; /*yellow*/
+	}
+
+.single-resource-section:nth-child(5n+3) .resource-type-icon {
+	background-color: #fa1201; /*red*/
+	}
+
+.single-resource-section:nth-child(5n+4) .resource-type-icon {
+	background-color: #14CB50; /*green*/
+	}
+
+.single-resource-section:nth-child(5n+5) .resource-type-icon {
+	background-color: #fe5000; /*orange*/
+	}
+
+.resources li:nth-child(5n+5) {
+		clear: both;
+		}
+
+
+.resource-desc {
+	font: italic 400 15px/1.4 'Lato', sans-serif;
+	color: #777;
+	margin: 12px 0;
+	}
+
+.resource-contact {
+	font: 700 14px/1.4 'Lato', sans-serif;
+	}
+
+.resource-contact p {
+	margin: 0 0 12px 0;
+	}
+
+.page-content #content .resource-contact p:first-child {
+	padding-top: 0;
+	}
+
+.resource-link {
+	font: 700 14px/1.4 'Lato', sans-serif;
+	transition: opacity .2s;
+	}
+
+.resource-link:hover {
+	opacity: .6;
+	}
+
+.caregiver-contact-info {
+	border-top: 1px solid #ddd;
+	}
+
+.caregiver-contact-info h2 {
+	font-weight: 900;
+	color: #002f6c;
+	}
+
+.caregiver-contact-info h3 {
+	margin: 30px 0 0 0;
+}
+
+.caregiver-contact-info p {
+	margin: 5px 0 10px;
+	font-size: 16px;
+	line-height: 1.5;
+	}
+
+/*Resources Responsive */
+
+@media only screen and (max-width: 760px) {
+
+	.single-resource {
+		width: 50%;
+		padding-bottom: 30px;
+		}
+
+	.single-resource:nth-child(odd) {
+		clear: both;
+		}
+
+} /* end of tablet */
+
+
+@media only screen and (max-width: 500px) {
+
+	.single-resource {
+		width: 100%;
+		}
+
+} /* end of mobile */
+
+
+
